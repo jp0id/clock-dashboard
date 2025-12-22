@@ -32,17 +32,6 @@
 
 ---
 
-## 🛠️ 技术栈
-
-- **框架**: [Vue 3 (Composition API)](https://vuejs.org/)
-- **构建工具**: [Vite 5](https://vitejs.dev/)
-- **语言**: [TypeScript](https://www.typescriptlang.org/)
-- **样式**: [Tailwind CSS 3](https://tailwindcss.com/)
-- **图标**: [Lucide Vue Next](https://lucide.dev/)
-- **兼容性**: [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) (针对旧版 Safari)
-- **字体**: [Fontsource](https://fontsource.org/) (本地托管 Cherry Bomb One, Huninn)
-
----
 
 ## 🚀 快速开始
 
@@ -77,7 +66,15 @@ pnpm build
 
 1. **HA 地址**：例如 `http://192.168.1.100:8123`
 2. **长期访问令牌**：在 HA 个人设置页底部生成。
-3. **JSON 模式**：您可以直接粘贴以下格式进行批量配置：
+3. **跨域配置 (CORS)**：为了让看板能够正常访问 HA 接口，您需要修改 HA 的 `configuration.yaml`，添加以下内容并重启 HA：
+```yaml
+http:
+  cors_allowed_origins:
+    - https://your-github-username.github.io  # 如果使用 GitHub Pages 部署
+    - http://192.168.1.xxx:3000               # 本地开发地址
+```
+
+4. **JSON 模式**：您可以直接粘贴以下格式进行批量配置：
 ```json
 {
   "url": "http://your-ha-url:8123",
