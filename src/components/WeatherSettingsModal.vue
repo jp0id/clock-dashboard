@@ -314,7 +314,9 @@ async function handleManualRefresh() {
             立即刷新天气
           </button>
           <button
-            class="flex-1 flex items-center justify-center gap-2 p-4 rounded-2xl bg-white text-black font-bold hover:bg-opacity-90 transition-all"
+            class="flex-1 flex items-center justify-center gap-2 p-4 rounded-2xl font-bold transition-all"
+            :class="citySearchLoading || loading ? 'bg-white/30 text-white/50 cursor-not-allowed' : 'bg-white text-black hover:bg-opacity-90'"
+            :disabled="citySearchLoading || loading"
             @click="handleSaveAndClose"
           >
             <Save class="w-5 h-5" />
