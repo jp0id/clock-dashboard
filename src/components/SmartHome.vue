@@ -170,7 +170,7 @@ defineExpose({ updateAllStates, entitiesStates })
         :class="{ 'on': isEntityOn(entity.id), 'opacity-50 pointer-events-none': loadingStates[entity.id] }"
         @click="toggleEntity(entity.id)"
       >
-        <div class="flex items-center justify-between w-full">
+        <div class="flex items-center justify-between w-full mb-4">
           <div
             class="w-12 h-12 flex items-center justify-center rounded-full transition-colors"
             :class="isEntityOn(entity.id) ? 'bg-white text-black' : 'bg-white/10 text-white'"
@@ -223,7 +223,6 @@ defineExpose({ updateAllStates, entitiesStates })
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
