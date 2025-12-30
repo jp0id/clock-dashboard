@@ -39,7 +39,7 @@ onUnmounted(() => {
   >
     <!-- 状态与定位 -->
     <div class="flex items-center justify-center md:justify-start gap-0">
-      <div id="weather-icon" class="w-28 h-28 drop-shadow-xl">
+      <div id="weather-icon" class="w-28 h-28 drop-shadow-xl flex-shrink-0">
         <img :src="weatherInfo.icon" :alt="weatherInfo.text" class="w-full h-full object-contain">
       </div>
       <div>
