@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.14.1](https://github.com/teojs/clock-dashboard/compare/v1.14.0...v1.14.1) (2025-12-31)
+
+
+### Features
+
+* Add visitor badge placeholder and inject badge during deployment. ([20da37d](https://github.com/teojs/clock-dashboard/commit/20da37d3321c603f0c4dbbda56361fdfe70e43a1))
+
 ## [1.14.0](https://github.com/teojs/clock-dashboard/compare/v1.13.0...v1.14.0) (2025-12-31)
 
 
