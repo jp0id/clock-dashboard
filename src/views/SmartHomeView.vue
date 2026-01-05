@@ -2,7 +2,7 @@
 import { AirVent, AlertTriangle, Blinds, Droplets, Fan, Lightbulb, Loader2, Power, Settings, Thermometer, Tv, Zap } from 'lucide-vue-next'
 import { storeToRefs } from 'pinia'
 import { computed, onUnmounted, ref, watch } from 'vue'
-import { haSocket } from '../api/ha-websocket'
+import { haSocket } from '../api'
 import SmartSettingsModal from '../components/SmartSettingsModal.vue'
 import { useConfigStore } from '../stores/config'
 
