@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/teojs/clock-dashboard/compare/v1.15.4...v1.16.0) (2026-01-07)
+
+
+### Features
+
+* add 24-hour format toggle in ClockSettingsModal and update time handling in useTime hook ([67048f9](https://github.com/teojs/clock-dashboard/commit/67048f91d9b11c9de04d95278e3d7f7ad0d7114f))
+* add ClockSettingsModal component for customizable clock settings and integrate SF Pro Rounded font ([e52062f](https://github.com/teojs/clock-dashboard/commit/e52062f74371d0ae04ebcf4f06a248d7e647894c))
+* add cross-origin loading tip in SmartSettingsModal to assist users with configuration ([ab2fee0](https://github.com/teojs/clock-dashboard/commit/ab2fee057fef272505de288141bb2b9e990eab34))
+* enhance ClockWeatherView with computed baseDelay for dynamic digit delays based on clock settings ([a8486f7](https://github.com/teojs/clock-dashboard/commit/a8486f73b56ce93b8d6bf13b0a51b05f82acbfce))
+* implement swipe detection and global click handling in App.vue for improved user interaction ([41d0140](https://github.com/teojs/clock-dashboard/commit/41d01404c163e17a7be3891db078f39c9ad9a53d))
+
 ### [1.15.4](https://github.com/teojs/clock-dashboard/compare/v1.15.3...v1.15.4) (2026-01-06)
 
 ### [1.15.3](https://github.com/teojs/clock-dashboard/compare/v1.15.2...v1.15.3) (2026-01-05)
